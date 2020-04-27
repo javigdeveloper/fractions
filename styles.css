@@ -1,0 +1,59 @@
+.two, .three, .four, .five, .six{
+  display: grid;
+  position: absolute;
+  left: 200px;
+  background-color: rgb(30, 175, 175);
+  height: 10vh;
+  width: 30vh;
+}
+.two {
+  top: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+.three {
+  top: 150px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.four {
+  top: 250px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.five {
+  top: 350px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.six {
+  top: 450px;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.first {
+  grid-column: 1;
+  background-color: white;
+  border: solid;
+}
+
+.second {
+  grid-column: 2;
+  border: solid;
+}
+
+.third {
+  grid-column: 3;
+  border: solid;
+}
+
+.fourth {
+  grid-column: 4;
+  border: solid;
+}
+
+.fifth {
+  grid-column: 5;
+  border: solid;
+}
+
+.sixth {
+  grid-column: 6;
+  border: solid;
+}
