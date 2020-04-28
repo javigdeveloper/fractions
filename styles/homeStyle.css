@@ -1,0 +1,18 @@
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 30px;
+}
+
+.levels {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  font-size: 30px;
+  text-decoration: none;
+  margin: 10px 20px;
+}
