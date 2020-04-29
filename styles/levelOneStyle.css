@@ -1,0 +1,143 @@
+a {
+  font-size: 30px;
+}
+
+.instruction {
+  font-size: 30px;
+}
+
+.box {
+  height: 60px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  position: relative;
+}
+
+input {
+  display: none;
+}
+
+label {
+  padding: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+label::after {
+  content: "";
+  position: absolute;
+  right: 20%;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgb(25, 134, 230);
+  border-radius: 50%;
+}
+
+label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+  right: 26%;
+  width: 8px;
+  height: 8px;
+  border: 3px solid rgb(25, 134, 230);
+  border-radius: 50%;
+  background-color: rgb(25, 134, 230);
+  opacity: 0;
+}
+
+.box input:checked ~ label::before {
+  opacity: 1;
+}
+
+/* css for the images */
+
+.two {
+  display: grid;
+  position: absolute;
+  left: 200px;
+  background-color: rgb(30, 175, 175);
+  height: 10vh;
+  width: 30vh;
+  top: 230px;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+.three {
+  display: grid;
+  position: absolute;
+  left: 200px;
+  background-color: rgb(30, 175, 175);
+  height: 10vh;
+  width: 30vh;
+  top: 230px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.four {
+  display: grid;
+  position: absolute;
+  left: 200px;
+  background-color: rgb(30, 175, 175);
+  height: 10vh;
+  width: 30vh;
+  top: 230px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.five {
+  display: grid;
+  position: absolute;
+  left: 200px;
+  background-color: rgb(30, 175, 175);
+  height: 10vh;
+  width: 30vh;
+  top: 230px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.six {
+  display: grid;
+  position: absolute;
+  left: 200px;
+  background-color: rgb(30, 175, 175);
+  height: 10vh;
+  width: 30vh;
+  top: 230px;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.first {
+  grid-column: 1;
+  background-color: white;
+  border: solid;
+}
+
+.second {
+  grid-column: 2;
+  border: solid;
+}
+
+.third {
+  grid-column: 3;
+  border: solid;
+}
+
+.fourth {
+  grid-column: 4;
+  border: solid;
+}
+
+.fifth {
+  grid-column: 5;
+  border: solid;
+}
+
+.sixth {
+  grid-column: 6;
+  border: solid;
+}
+
+
