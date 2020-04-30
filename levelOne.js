@@ -1,7 +1,7 @@
 let classes = ["three", "four", "five", "six"];
 let classesForDivs = ["third", "fourth", "fifth", "sixth"];
 let image = document.getElementById("figure");
-console.log(image.className)
+console.log("this is " + image.className)
 
 function changeItem() {
   let i = classes[0];

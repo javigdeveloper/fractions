@@ -9,32 +9,57 @@
 <body>
   <a href="../index.html">Home</a>
   <p class="instruction">choose the correct option for the picture:</p>
-
-  <form>
-    <div class="box">
-      <input type="radio" id="answer1" name="group" value="answer1">
-      <label for="answer1">3/4</label><br>
-    </div>
-    <div class="box">
-      <input type="radio" id="answer2" name="group" value="answer2">
-      <label for="answer2">2/4</label><br>
-    </div>
-    <div class="box">
-      <input type="radio" id="answer3" name="group" value="answer3">
-      <label for="answer3">1/4</label><br>
-    </div>
-    <div class="box">
-      <input type="radio" id="answer4" name="group" value="answer4">
-      <label for="answer4">4/2</label>
-    </div>
-  </form>
   
-  <div class="container">
-    <div class="first"></div>
-    <div class="second"></div>
+  <div class="main">
+    <div class="option">
+      <div id="numerator" class="numerator"></div>
+      <div>/</div>
+      <div id="denominator" class="denominator"></div>
+    </div>
+    <div class="option">
+      <div id="numerator" class="numerator"></div>
+      <div>/</div>
+      <div id="denominator" class="denominator"></div>
+    </div>
+    <div class="option">
+      <div id="numerator" class="numerator"></div>
+      <div>/</div>
+      <div id="denominator" class="denominator"></div>
+    </div>
+    <div class="option">
+      <div id="numerator" class="numerator"></div>
+      <div>/</div>
+      <div id="denominator" class="denominator"></div>
+    </div>
+
+    <form id="form">
+      <div class="box">
+        <input type="radio" id="answer1" name="group" value="answer1">
+        <label for="answer1">
+        </label><br>
+      </div>
+      <div class="box">
+        <input type="radio" id="answer2" name="group" value="answer2">
+        <label for="answer2"></label><br>
+      </div>
+      <div class="box">
+        <input type="radio" id="answer3" name="group" value="answer3">
+        <label for="answer3"></label><br>
+      </div>
+      <div class="box">
+        <input type="radio" id="answer4" name="group" value="answer4">
+        <label for="answer4"></label>
+      </div>
+    </form>
+  </div>
+    
+  <div id="container" class="container">
+    <div id="first" class="first"></div>
+    <div id="second" class="second"></div>
   </div>
 
   <button class="btn" onclick="changeItem()">Submit Answer</button>
+  <button class="fractionsBtn" onclick="addFractions()">Add Fractions</button>
 
   <script src="../levelTwo.js"></script>
 </body>
