@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>level one</title>
+  <link rel="stylesheet" href="../styles/levelFourStyle.css">
+</head>
+<body>
+  <a href="../index.html">Home</a>
+  <p class="instruction">choose the correct option for the picture:</p>
+
+  <form>
+    <div class="box">
+      <input type="radio" id="answer1" name="group" value="answer1">
+      <label for="answer1">3/4</label><br>
+    </div>
+    <div class="box">
+      <input type="radio" id="answer2" name="group" value="answer2">
+      <label for="answer2">2/4</label><br>
+    </div>
+    <div class="box">
+      <input type="radio" id="answer3" name="group" value="answer3">
+      <label for="answer3">1/4</label><br>
+    </div>
+    <div class="box">
+      <input type="radio" id="answer4" name="group" value="answer4">
+      <label for="answer4">4/2</label>
+    </div>
+  </form>
+  
+  <div id="figure" class="two">
+    <div class="first"></div>
+    <div class="second"></div>
+  </div>
+
+  <button class="btn" onclick="changeItem()">Submit Answer</button>
+
+  <script src="../levelOne.js"></script>
+</body>
+</html>
