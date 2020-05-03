@@ -104,6 +104,7 @@ label::before {
   height: 40px;
   width: 100px;
   margin-top: 120px;
+  cursor: pointer;
 }
 
 
