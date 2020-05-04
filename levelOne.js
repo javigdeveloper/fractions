@@ -1,4 +1,4 @@
-function generateNums() {
+function generateNums() {  
   // clearing the image of previous times
   let leftFraction = document.getElementsByClassName("first");
   let rightFraction = document.getElementsByClassName("second");
@@ -21,7 +21,7 @@ function generateNums() {
     denominator[j].innerHTML = innerArr[0][1];
   }  
   // choosing one of the answers to match with the image
-  let random = Math.floor(Math.random() * 4)
+  random = Math.floor(Math.random() * 4)
   let upper = numerator[random].innerHTML;
   let bottom =  denominator[random].innerHTML;
   // these numbers can't be strings so that they can be manipulated inside the for loop
@@ -41,5 +41,48 @@ function generateNums() {
     newDiv.setAttribute("class", "first");
     image.insertBefore(newDiv, document.getElementById("second"))
   }
+  // clearing the radio button's answers
+  function clearAnswers() {
+    let checkedOrNot = document.getElementsByTagName("input");
+    for(let k = 0; k < checkedOrNot.length; k++) {
+      checkedOrNot[k].checked = false;
+    }
+  }
+  clearAnswers();
+  
+  // subtracting lives if wrong answer
 }
 generateNums()
+
+
+// check the value of the form
+function doSomeThing() {
+  let radioButtons = document.getElementsByName("group");
+  radioButtons.forEach(elem => {
+    if(elem.checked){
+      let chosenAnswer = elem.value;
+      if(random !== chosenAnswer) {
+        // console.log("random is " + random);
+        // console.log("chosen is " + chosenAnswer); 
+      }
+    }
+  });
+  // let setOpacity = document.getElementsByClassName("box input:checked ~ label::before");
+  // let setOpacity = document.getElementsByClassName("box")[random];
+  // let setOpacity = document.querySelector('label', ':before');
+  // setOpacity.pseudoStyle("before","opacity","0");
+  // let setOpacity = document.getElementById("label");
+  // setOpacity.classList.add("erase");
+  // let setOpacity = document.getElementsByTagName(("label")[random], '::before');
+  // let setOpacity = document.querySelector('label[random]', ':before');
+  // setOpacity.style.opacity = "0";
+  
+  
+  
+  // this nearly worked, but I think the problem is always going to be that I erase the whole element
+  
+
+
+}
+
+

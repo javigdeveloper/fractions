@@ -9,6 +9,11 @@
 <body>
   <a href="../index.html">Home</a>
   <p class="instruction">choose the correct option for the picture:</p>
+  <div class="lives">
+    <div class="heart" id="heartOne"></div>
+    <div class="heart" id="heartTwo"></div>
+    <div class="heart" id="heartThree"></div>
+  </div>
   
   <div class="center-box">
     <div class="main">
@@ -35,22 +40,21 @@
         </div>
       </div>
   
-      <form id="form">
+      <form id="form" onclick="doSomeThing()">
         <div class="box">
-          <input type="radio" id="answer1" name="group" value="answer1">
-          <label for="answer1">
-          </label><br>
+          <input type="radio" id="answer1" name="group" value="0">
+          <label for="answer1"></label><br>
         </div>
         <div class="box">
-          <input type="radio" id="answer2" name="group" value="answer2">
+          <input type="radio" id="answer2" name="group" value="1">
           <label for="answer2"></label><br>
         </div>
         <div class="box">
-          <input type="radio" id="answer3" name="group" value="answer3">
+          <input type="radio" id="answer3" name="group" value="2">
           <label for="answer3"></label><br>
         </div>
         <div class="box">
-          <input type="radio" id="answer4" name="group" value="answer4">
+          <input type="radio" id="answer4" name="group" value="3">
           <label for="answer4"></label>
         </div>
       </form>
