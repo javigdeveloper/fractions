@@ -1,4 +1,23 @@
-function generateNums() {  
+function generateNums() {
+  // check the value of the form and take lives away if wrong
+  let el = document.getElementsByClassName("heart");
+  let radioButtons = document.getElementsByName("group");
+  radioButtons.forEach(elem => {
+    if(elem.checked){
+      let chosenAnswer = elem.value;
+      chosenAnswer = parseInt(chosenAnswer);
+      if(random !== chosenAnswer) {
+        el[0].remove();
+        if(el.length === 0) {
+          let lives = document.getElementsByClassName("lives")[0];
+          let message = document.createElement("p");
+          lives.appendChild(message);
+          message.setAttribute("class", "message");
+          message.innerText = "You're out of lives"
+        }
+      }
+    }
+  });
   // clearing the image of previous times
   let leftFraction = document.getElementsByClassName("first");
   let rightFraction = document.getElementsByClassName("second");
@@ -25,8 +44,8 @@ function generateNums() {
   let upper = numerator[random].innerHTML;
   let bottom =  denominator[random].innerHTML;
   // these numbers can't be strings so that they can be manipulated inside the for loop
-  upper = parseInt(upper)
-  bottom = parseInt(bottom)
+  upper = parseInt(upper);
+  bottom = parseInt(bottom);
   // adding coloured fractions (right of the image)
   let image = document.getElementById("container");
   for(let i = 0; i < upper; i++) {
@@ -49,40 +68,9 @@ function generateNums() {
     }
   }
   clearAnswers();
-  
-  // subtracting lives if wrong answer
 }
 generateNums()
 
 
-// check the value of the form
-function doSomeThing() {
-  let radioButtons = document.getElementsByName("group");
-  radioButtons.forEach(elem => {
-    if(elem.checked){
-      let chosenAnswer = elem.value;
-      if(random !== chosenAnswer) {
-        // console.log("random is " + random);
-        // console.log("chosen is " + chosenAnswer); 
-      }
-    }
-  });
-  // let setOpacity = document.getElementsByClassName("box input:checked ~ label::before");
-  // let setOpacity = document.getElementsByClassName("box")[random];
-  // let setOpacity = document.querySelector('label', ':before');
-  // setOpacity.pseudoStyle("before","opacity","0");
-  // let setOpacity = document.getElementById("label");
-  // setOpacity.classList.add("erase");
-  // let setOpacity = document.getElementsByTagName(("label")[random], '::before');
-  // let setOpacity = document.querySelector('label[random]', ':before');
-  // setOpacity.style.opacity = "0";
-  
-  
-  
-  // this nearly worked, but I think the problem is always going to be that I erase the whole element
-  
-
-
-}
 
 

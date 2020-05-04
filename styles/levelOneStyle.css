@@ -9,7 +9,6 @@ a {
 .center-box {
   border: 6px solid rebeccapurple;
   padding: 50px;
-  /* position: relative; */
   display: flex;
   margin: 20px 200px;
 }
@@ -72,23 +71,6 @@ label::before {
   opacity: 0;
 }
 
-/* I could finally change add a class through js to change the styling but realized the problem is I should try
-to change the checked attribute to false; */
-
-/* .erase::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(43%);
-  right: 70%;
-  width: 8px;
-  height: 8px;
-  border: 3px solid rgb(25, 134, 230);
-  border-radius: 50%;
-  background-color: rgb(25, 134, 230);
-  opacity: 0;
-} */
-
 .box input:checked ~ label::before {
   opacity: 1;
 }
@@ -124,8 +106,14 @@ to change the checked attribute to false; */
 }
 
 .lives {
-  margin-left: 1000px;
+  margin-left: 200px;
   display: flex;
+}
+
+.message {
+  font-size: 30px;
+  margin: 0px 0px 0px 380px;
+  color: red;
 }
 
 .heart {
