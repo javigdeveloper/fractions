@@ -14,7 +14,22 @@ function generateNums() {
           lives.appendChild(message);
           message.setAttribute("class", "message");
           message.innerText = "You're out of lives"
+          // create button to play again
+          let playAgainButton = document.createElement("button");
+          lives.appendChild(playAgainButton);
+          playAgainButton.innerText = "Play again";
+          // playAgainButton.style.boxShadow = "5px 10px 10px rgb(139, 139, 139)";
+          // previous or next line work, but next one is tidier for keeping css in one place
+          playAgainButton.classList.add("popButton");
+          playAgainButton.addEventListener("click", () => {window.location.reload()})
         }
+      } else {
+        let counter = document.getElementsByClassName("answerCounter")[0];
+        let correct = parseInt(counter.innerHTML);
+        console.log(correct);
+        console.log(typeof(correct));
+        correct++;
+        counter.innerText = correct;
       }
     }
   });

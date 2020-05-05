@@ -1,7 +1,16 @@
-a {
+a, .counterMessage, .answerCounter {
   font-size: 30px;
+  display: inline;
 }
-  
+
+.counterMessage {
+  margin-left: 60vw;
+}
+
+.answerCounter {
+  margin-left: 10px;
+}
+
 .instruction {
   font-size: 30px;
 }
@@ -103,6 +112,7 @@ label::before {
   width: 100px;
   margin-top: 120px;
   cursor: pointer;
+  box-shadow: 5px 10px 10px rgb(139, 139, 139);
 }
 
 .lives {
@@ -112,8 +122,12 @@ label::before {
 
 .message {
   font-size: 30px;
-  margin: 0px 0px 0px 380px;
+  margin: 0px 40px 0px 380px;
   color: red;
+}
+
+.popButton {
+  box-shadow: 5px 10px 10px rgb(139, 139, 139);
 }
 
 .heart {
