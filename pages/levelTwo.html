@@ -8,60 +8,52 @@
 </head>
 <body>
   <a href="../index.html">Home</a>
-  <p class="instruction">choose the correct option for the picture:</p>
+  <p class="counterMessage">Correct answers:</p>
+  <p class="answerCounter">0</p>
+  <p class="instruction">Get to 10 correct answers keeping as many lives as you can:</p>
+  <div class="lives">
+    <div class="heart" id="heartOne"></div>
+    <div class="heart" id="heartTwo"></div>
+    <div class="heart" id="heartThree"></div>
+  </div>
   
-  <div class="main">
-    <div class="options">
-      <div class="option">
-        <div id="numerator" class="numerator"></div>
+  <div class="center-box">
+    <div class="main">
+      <div id="numerator" class="numerator">
+        <input type="text">
+      </div>
       <div>/</div>
-      <div id="denominator" class="denominator"></div>
+      <div id="denominator" class="denominator">
+        <input type="text">
       </div>
-      <div class="option">
-        <div id="numerator" class="numerator"></div>
-        <div>/</div>
-        <div id="denominator" class="denominator"></div>
-      </div>
-      <div class="option">
-        <div id="numerator" class="numerator"></div>
-        <div>/</div>
-        <div id="denominator" class="denominator"></div>
-      </div>
-      <div class="option">
-        <div id="numerator" class="numerator"></div>
-        <div>/</div>
-        <div id="denominator" class="denominator"></div>
-      </div>
+  
+      <!-- <form id="form">
+        <div class="box">
+          <input type="radio" id="answer1" name="group" value="0">
+          <label for="answer1"></label><br>
+        </div>
+        <div class="box">
+          <input type="radio" id="answer2" name="group" value="1">
+          <label for="answer2"></label><br>
+        </div>
+        <div class="box">
+          <input type="radio" id="answer3" name="group" value="2">
+          <label for="answer3"></label><br>
+        </div>
+        <div class="box">
+          <input type="radio" id="answer4" name="group" value="3">
+          <label for="answer4"></label>
+        </div>
+      </form> -->
     </div>
-
-    <form id="form">
-      <div class="box">
-        <input type="radio" id="answer1" name="group" value="answer1">
-        <label for="answer1">
-        </label><br>
-      </div>
-      <div class="box">
-        <input type="radio" id="answer2" name="group" value="answer2">
-        <label for="answer2"></label><br>
-      </div>
-      <div class="box">
-        <input type="radio" id="answer3" name="group" value="answer3">
-        <label for="answer3"></label><br>
-      </div>
-      <div class="box">
-        <input type="radio" id="answer4" name="group" value="answer4">
-        <label for="answer4"></label>
-      </div>
-    </form>
+      
+    <div id="container" class="container">
+      <div id="first" class="first"></div>
+      <div id="second" class="second"></div>
+    </div>
+  
+    <button id="btn" class="btn" onclick="generateNums()">Submit Answer</button>
   </div>
-    
-  <div id="container" class="container">
-    <div id="first" class="first"></div>
-    <div id="second" class="second"></div>
-  </div>
-
-  <button class="btn" onclick="changeItem()">Submit Answer</button>
-  <button class="fractionsBtn" onclick="addFractions()">Add Fractions</button>
 
   <script src="../levelTwo.js"></script>
 </body>

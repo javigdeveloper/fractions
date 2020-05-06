@@ -27,62 +27,15 @@ a, .counterMessage, .answerCounter {
   width: 20vw;
 }
 
-.options {
-  width: 50px;
+/* not sure about the styling yet
+.numerator {
+  width: 10vw;
 }
 
-.option {
-  display: flex;
-  margin: 32px 15px;
-  font-size: 30px;
-  width: 50px;
-}
+.denominator {
+  width: 10vw;
+} */
 
-.box {
-  height: 61px;
-  width: 100px;
-  display: flex;
-  align-items: center;
-  margin: 5px;
-  position: relative;
-}
-  
-input {
-  display: none;
-}
-
-label {
-  padding: 10px;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-label::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 3px solid rgb(25, 134, 230);
-  border-radius: 50%;
-}
-
-label::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(43%);
-  right: 70%;
-  width: 8px;
-  height: 8px;
-  border: 3px solid rgb(25, 134, 230);
-  border-radius: 50%;
-  background-color: rgb(25, 134, 230);
-  opacity: 0;
-}
-
-.box input:checked ~ label::before {
-  opacity: 1;
-}
 
 /* css for the images */
 

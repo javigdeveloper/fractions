@@ -10,10 +10,11 @@ function generateNums() {
         el[0].remove();
         if(el.length === 0) {
           let lives = document.getElementsByClassName("lives")[0];
+          // display message out of lives
           let message = document.createElement("p");
           lives.appendChild(message);
           message.setAttribute("class", "message");
-          message.innerText = "You're out of lives"
+          message.innerText = "You're out of lives";
           // create button to play again
           let playAgainButton = document.createElement("button");
           lives.appendChild(playAgainButton);
@@ -26,13 +27,32 @@ function generateNums() {
       } else {
         let counter = document.getElementsByClassName("answerCounter")[0];
         let correct = parseInt(counter.innerHTML);
-        console.log(correct);
-        console.log(typeof(correct));
         correct++;
         counter.innerText = correct;
+        if(correct === 10) {
+          let message = document.createElement("p");
+          let lives = document.getElementsByClassName("lives")[0];
+          lives.appendChild(message);
+          message.setAttribute("class", "message");
+          message.innerText = "Great Job!!";
+          // create button to go to next level
+          let nextLevelButton = document.createElement("button");
+          lives.appendChild(nextLevelButton);
+          nextLevelButton.innerText = "Go to next level";
+          nextLevelButton.classList.add("popButton");
+          nextLevelButton.addEventListener("click", () => {window.location = "levelTwo.html"})
+          document.getElementById("btn").classList.remove("btn");
+          document.getElementById("btn").classList.add("noPlay");
+          console.log("working");
+        }
       }
     }
   });
+  // remove the button to submit answers if out of lives
+  if(el.length === 0) {
+    document.getElementById("btn").classList.remove("btn");
+    document.getElementById("btn").classList.add("noPlay");
+  }
   // clearing the image of previous times
   let leftFraction = document.getElementsByClassName("first");
   let rightFraction = document.getElementsByClassName("second");
