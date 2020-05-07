@@ -75,7 +75,7 @@ function generateNums() {
     denominator[j].innerHTML = innerArr[0][1];
   }  
   // choosing one of the answers to match with the image
-  random = Math.floor(Math.random() * 4)
+  random = Math.floor(Math.random() * 4);
   let upper = numerator[random].innerHTML;
   let bottom =  denominator[random].innerHTML;
   // these numbers can't be strings so that they can be manipulated inside the for loop

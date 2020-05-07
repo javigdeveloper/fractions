@@ -17,23 +17,34 @@ a, .counterMessage, .answerCounter {
 
 .center-box {
   border: 6px solid rebeccapurple;
-  padding: 50px;
+  height: 45vh;
+  padding: 60px 50px;
   display: flex;
   margin: 20px 200px;
 }
 
 .main {
   display: flex;
+  margin-top: 12vh;
   width: 20vw;
 }
 
-/* not sure about the styling yet
-.numerator {
-  width: 10vw;
+.numerator input, .denominator input{
+  width: 3vw;
+  margin: 20px;
+  font-size: 3em;
 }
 
-.denominator {
-  width: 10vw;
+.line {
+  margin: 0px 10px;
+  font-size: 4vw;
+  position: relative;
+  top: 20px;
+}
+
+/* .denominator input{
+  width: 2vw;
+  font-size: x-large;
 } */
 
 

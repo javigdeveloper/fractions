@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>level one</title>
+  <title>level two</title>
   <link rel="stylesheet" href="../styles/levelTwoStyle.css">
 </head>
 <body>
   <a href="../index.html">Home</a>
   <p class="counterMessage">Correct answers:</p>
   <p class="answerCounter">0</p>
-  <p class="instruction">Get to 10 correct answers keeping as many lives as you can:</p>
+  <p class="instruction">Type the answer in the field:</p>
   <div class="lives">
     <div class="heart" id="heartOne"></div>
     <div class="heart" id="heartTwo"></div>
@@ -22,29 +22,10 @@
       <div id="numerator" class="numerator">
         <input type="text">
       </div>
-      <div>/</div>
+      <div class="line">/</div>
       <div id="denominator" class="denominator">
         <input type="text">
       </div>
-  
-      <!-- <form id="form">
-        <div class="box">
-          <input type="radio" id="answer1" name="group" value="0">
-          <label for="answer1"></label><br>
-        </div>
-        <div class="box">
-          <input type="radio" id="answer2" name="group" value="1">
-          <label for="answer2"></label><br>
-        </div>
-        <div class="box">
-          <input type="radio" id="answer3" name="group" value="2">
-          <label for="answer3"></label><br>
-        </div>
-        <div class="box">
-          <input type="radio" id="answer4" name="group" value="3">
-          <label for="answer4"></label>
-        </div>
-      </form> -->
     </div>
       
     <div id="container" class="container">
@@ -52,7 +33,7 @@
       <div id="second" class="second"></div>
     </div>
   
-    <button id="btn" class="btn" onclick="generateNums()">Submit Answer</button>
+    <button id="btn" class="btn" onclick="secondFunction()">Submit Answer</button>
   </div>
 
   <script src="../levelTwo.js"></script>
