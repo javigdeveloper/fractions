@@ -64,18 +64,18 @@ function secondFunction () {
     let correct = parseInt(counter.innerHTML);
     correct++;
     counter.innerText = correct;
-    if(correct === 10) {
+    if(correct === 3) {
     let message = document.createElement("p");
     let lives = document.getElementsByClassName("lives")[0];
     lives.appendChild(message);
     message.setAttribute("class", "message");
     message.innerText = "Great Job!!";
-    // create button to go to next level
-    let nextLevelButton = document.createElement("button");
-    lives.appendChild(nextLevelButton);
-    nextLevelButton.innerText = "Go to next level";
-    nextLevelButton.classList.add("popButton");
-    nextLevelButton.addEventListener("click", () => {window.location = "levelTwo.html"})
+    // // create button to go to next level
+    // let nextLevelButton = document.createElement("button");
+    // lives.appendChild(nextLevelButton);
+    // nextLevelButton.innerText = "Go to next level";
+    // nextLevelButton.classList.add("popButton");
+    // nextLevelButton.addEventListener("click", () => {window.location = "levelTwo.html"})
     document.getElementById("btn").classList.remove("btn");
     document.getElementById("btn").classList.add("noPlay");
     }
